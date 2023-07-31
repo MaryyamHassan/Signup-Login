@@ -1,0 +1,48 @@
+body {
+    background: #bda7b9;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#home {
+    height: 75vh;
+}
+
+h1 {
+    color: #fbfbfb;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgb(122, 71, 109)
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: #362334 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(255, 255, 255) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+button{
+    background-color: #a77798;
+    color: white;
+    height: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    background-color: rgb(93, 18, 73);
+    
+}
+p a{
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
