@@ -70,7 +70,8 @@ function signUp() {
         localStorage.setItem('users', JSON.stringify(signUpArray))
         document.getElementById('exist').innerHTML = '<span class="text-success m-3">Success</span>'
         //window.location.replace('https://' + location.hostname + '/login.html')
-        window.location.replace("http://127.0.0.1:5501/login.html");
+        // window.location.replace("http://127.0.0.1:5501/login.html");
+        window.location.href ="login.html"
     }
 
     }
@@ -107,20 +108,21 @@ function login() {
    // console.log(signUpArray[i].email.toLowerCase() + " "+signUpArray[i].password.toLowerCase());
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             successLogin = true;
-            console.log("login SUccess")
+            //  console.log("login SUccess")
             localStorage.setItem('Username', signUpArray[i].name)
-            if (baseURL == '/') {
+           // if (baseURL == '/') {
                 
-                location.replace('https://' + location.hostname + '/home.html')
+              //  location.replace('https://' + location.hostname + '/home.html')
 
-            } else {
-                location.replace(baseURL + '/home.html')
+           // } else {
+            //    location.replace(baseURL + '/home.html')
 
-            }
+           // }
         }
     }
     if(successLogin) {
         alert("Success Login");
+        window.location.href="home.html"
     }
     else {
         document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'
